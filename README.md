@@ -1,19 +1,18 @@
 # EV energy estimation
 
-## 这是一个预测电动汽车（EV）的空调能量消耗的项目。
-## 关于各个文件的任务目的：
-
+## これは電気自動車（EV）のエアコンのエネルギー消費を予測するプロジェクトです。プロジェクトにはコード部分のみが展示されており、データは含まれていません。
+## 各ファイルのタスク目的について：
 ### Data collection
 get_data_from_db.ipynb  
-从数据库中部分天气数据和实际的EV的能量消耗数据  
+データベースからの一部の天気データと実際のEVのエネルギー消費データを取得します  
 google_api_ele  
-通过Google Maps Elevation API取得道路的标高数据  
+Google Maps Elevation APIを使用して、道路の標高データを取得します  
 
 ### Data preprocessing
-Prepare_dataset  
-将数据进行初步的统合，整理，以将数据转换成可用于机器学习模型训练的数据结构  
-Process_and_analyze_data  
-对整理好的数据集做进一步的分析和处理。比如检出和除外异常值  
+Prepare_dataset.ipynb    
+データを初期的に統合・整理し、機械学習モデルの訓練に適用できるデータ構造に変換します  
+Process_and_analyze_data.ipynb    
+整理されたデータセットに対して、さらなる分析と処理を行います。たとえば、異常値の検出と除外など  
 
 ### Predictive model
-测试了一些机器学习的算法。从结果上来看，随机森林是最适合的  
+いくつかの機械学習アルゴリズムをテストしました。結果から見ると、ランダムフォレストが最も適しているようです  
